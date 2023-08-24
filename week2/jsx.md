@@ -11,7 +11,7 @@ const element = <h1>Hello, world!</h1>
 
 Hello ~ JSX 
 
-놀랍게도 리액트에서 jsx 사용이 필수가 아니라고 한다. (하지만 구글링해서 봤던 리액트는 다 JSX였는걸..?)
+놀랍게도 리액트에서 jsx 사용이 필수가 아니라고 한다. (하지만 구글링해서 봤던 리액트는 다 JSX였는걸..?)  
 필수가 아님에도 대부분의 사람들은 JSX를 사용하고 있는교..? (글쓰다보니 궁금해짐)
 
 1. JS 와 JSX 비교해보니 바로 알겠는걸 (https://babeljs.io/repl에서 확인가능!)
@@ -53,14 +53,14 @@ React.createElement("div", null,
 );
 ```
 
-![StrictMode](/my-app/static/images/strictModeError.png)
+![StrictMode](/my-app/static/images/strictModeError.png)  
 ++ 아 리액트에서는 <React.Fragment>로 감싸주면 된다! <div>로 감싸줘도 됨!  
 
 코드 가독성이 너무 좋은걸요?
 스크립트안에 html를 씀으로써 가독성이 좋아진다!
 
 ## Syntactic sugar - 문법적 설탕 - 달달한 문법?
-![syntactic-sugar](/my-app/static/images/syntactic-sugar.jpg)
+![syntactic-sugar](/my-app/static/images/syntactic-sugar.jpg)  
 문법적 기능은 그대로인데 그것을 읽는 사람이 직관적으로 쉽게 코드를 읽을 수 있게 만든다. (-> 코드 가독성 향상?)
 JSX를 사용하는게 여기에 해당하는 경우
 
@@ -161,7 +161,7 @@ function ExampleApplication() {
 
 
 ## VDOM(Virtual DOM)이란?
-![ VDOM 트리](/my-app/static/images/virtualDomTree.jpeg)
+![ VDOM 트리](/my-app/static/images/virtualDomTree.jpeg)  
 재조정을 막 하지는 않는다? 유지보수에 좋다?
 "이 접근방식이 React의 선언적 API를 가능하게 합니다." <- 이게 VDOM의 핵심!
 
@@ -169,7 +169,7 @@ function ExampleApplication() {
 찢어버리고 싶은거 참고 화이트로 틀린 부분만 수정해서 다시 쓴다. -> VDOM (가상돔은 필요한 부분만 쏙 골라집는다!)
 
 ### DOM 이란?
-![ DOM 트리](/my-app/static/images/DomTree.webp)
+![ DOM 트리](/my-app/static/images/DomTree.webp)  
 문서 객체 모델(The Document Object Model, 이하 DOM) 은 HTML, XML 문서의 프로그래밍 interface 이다.
 DOM은 문서의 구조화된 표현(structured representation)을 제공하며 프로그래밍 언어가 DOM 구조에 접근할 수 있는 방법을 제공하여 
 그들이 문서 구조, 스타일, 내용 등을 변경할 수 있게 돕는다. DOM 은 nodes와 objects로 문서를 표현한다. 
@@ -178,7 +178,7 @@ DOM은 문서의 구조화된 표현(structured representation)을 제공하며 
 (https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction)
 
 ### DOM과 Virtual DOM의 차이
-![ DOM과 Virtual DOM의 차이](/my-app/static/images/dom_virtualDom.png)
+![ DOM과 Virtual DOM의 차이](/my-app/static/images/dom_virtualDom.png)  
 (https://doqtqu.tistory.com/316)
 
 
