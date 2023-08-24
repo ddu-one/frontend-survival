@@ -57,12 +57,17 @@ React.createElement("div", null,
 ++ 아 리액트에서는 <code><React.Fragment></code>로 감싸주면 된다! <code><div></code>로 감싸줘도 됨!  
 
 코드 가독성이 너무 좋은걸요?
-스크립트안에 html를 씀으로써 가독성이 좋아진다!
+스크립트안에 html를 씀으로써 가독성이 좋아진다!  
+
+
+<hr/>  
 
 ## 🍬 Syntactic sugar - 문법적 설탕 - 달달한 문법?
 ![syntactic-sugar](/my-app/static/images/syntactic-sugar.jpg)  
 문법적 기능은 그대로인데 그것을 읽는 사람이 직관적으로 쉽게 코드를 읽을 수 있게 만든다. (-> 코드 가독성 향상?)
-JSX를 사용하는게 여기에 해당하는 경우
+JSX를 사용하는게 여기에 해당하는 경우  
+
+<hr/>  
 
 ## 🔠 React.createElement 
 javascript에서
@@ -109,7 +114,9 @@ ReactDOM.render(
   ),
   document.querySelector('#root')
 );
-```
+```  
+
+<hr/>  
 
 
 ## 🔠 React Element
@@ -120,7 +127,9 @@ ReactDOM.render(
 root 안에 들어가는 모든 엘리먼트를 React DOM에서 관리하며 이것을 root DOM 노드라고 부른다. 
 일반적으로 React로 구현된 앱은 하나의 Root DOM 노드가 있다.
 
-React 엘리먼트를 root DOM 노드에 렌더링 하려면 <code>ReactDOM.render(element, document.getElementById('root'))</code>에 전달하면된다.
+React 엘리먼트를 root DOM 노드에 렌더링 하려면 <code>ReactDOM.render(element, document.getElementById('root'))</code>에 전달하면된다.  
+
+<hr/>  
 
 ## ⚠ React StrictMode - 엄격한 모드!
 StrictMode는 애플리케이션 내의 잠재적인 문제를 알아내기 위한 도구(개발 모드에서만 활성화) 
@@ -157,7 +166,9 @@ function ExampleApplication() {
 }
 ```
 
-<code><React.StrictMode></React.StrictMode></code> 로 엄격히 검사할 영역을 감싸줌!
+<code><React.StrictMode></React.StrictMode></code> 로 엄격히 검사할 영역을 감싸줌!  
+
+<hr/>  
 
 
 ## ✅ VDOM(Virtual DOM)이란?
@@ -165,8 +176,10 @@ function ExampleApplication() {
 재조정을 막 하지는 않는다? 유지보수에 좋다?
 "이 접근방식이 React의 선언적 API를 가능하게 합니다." <- 이게 VDOM의 핵심!
 
-편지 쓰다 맞춤법 틀리면 찢어버리고 다시 그린다. -> DOM
-찢어버리고 싶은거 참고 화이트로 틀린 부분만 수정해서 다시 쓴다. -> VDOM (가상돔은 필요한 부분만 쏙 골라집는다!)
+편지 쓰다 맞춤법 틀리면 찢어버리고 다시 그린다. -> DOM  
+찢어버리고 싶은거 참고 화이트로 틀린 부분만 수정해서 다시 쓴다. -> VDOM (가상돔은 필요한 부분만 쏙 골라집는다!)  
+
+<hr/>  
 
 ## ✅ DOM 이란?
 ![ DOM 트리](/my-app/static/images/DomTree.webp)  
@@ -175,11 +188,15 @@ DOM은 문서의 구조화된 표현(structured representation)을 제공하며 
 그들이 문서 구조, 스타일, 내용 등을 변경할 수 있게 돕는다. DOM 은 nodes와 objects로 문서를 표현한다. 
 이들은 웹 페이지를 스크립트 또는 프로그래밍 언어들에서 사용될 수 있게 연결시켜주는 역할을 담당한다.
 
-(https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction)
+(https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction)  
+
+<hr/>  
 
 ### 🆚 DOM과 Virtual DOM의 차이
 ![ DOM과 Virtual DOM의 차이](/my-app/static/images/dom_virtualDom.png)  
-(https://doqtqu.tistory.com/316)
+(https://doqtqu.tistory.com/316)  
+
+<hr/>  
 
 
 ## Reconciliation(재조정) 과정은 무엇인가?
